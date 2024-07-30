@@ -39,6 +39,32 @@ h3 {
     border: 1px solid magenta;
     border-radius: 5px;
     text-decoration: none;
-
 }
+
+.homepage-link {
+    text-align: center;
+    display: block;
+    color: magenta;
+}
+
+p {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center; 
+}
+
+.about-paragraphs {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.about-paragraphs p {
+    margin: 15px;
+}
+
+
 
