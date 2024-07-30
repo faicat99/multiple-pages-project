@@ -1,20 +1,32 @@
+:root {
+    --primary-color: #ff69b4;
+    --secondary-color: white;
+    --tertiary-color: #dadada;
+    --box-shadow: 10px 10px 10px rgba(20, 20, 20, 0.2);
+}
+
+body {
+    margin: 60px auto;
+    max-width: 800px;
+}
+
 h1, h2, h3 {
     text-align: center;
     margin: 0;
 }
 
 h1 {
-    font-size: 96px;
+    font-size: 96px;    
 }
 
 h2 {
     font-size: 48px;
-    color: #1a1a1a;
+    color: #1A1A1A;
 }
 
 h3 {
     font-size: 24px;
-    color: #4c4c4c;
+    color: #4C4C4C;
     margin-bottom: 30px;
     
 }
@@ -22,21 +34,31 @@ h3 {
 .navigation-links {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+}
+
+.navigation-links a {
+    margin: 20px;
+    text-decoration: none;
+    padding: 20px 15px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    text-transform: capitalize;
 }
 
 .about-link {
-    color: white;
-    background-color: magenta;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 20px 10px;
     border-radius: 5px;
     text-decoration: none;
 }
 
 .contact-link {
-    color: magenta;
-    background-color: white;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 20px 10px;
-    border: 1px solid magenta;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     text-decoration: none;
 }
@@ -44,11 +66,11 @@ h3 {
 .homepage-link {
     text-align: center;
     display: block;
-    color: magenta;
+    color: var(--primary-color);
 }
 
 p {
-    background-color: lightgray;
+    background-color: var(--tertiary-color);
     padding: 20px;
     border-radius: 5px;
     font-size: 18px;
@@ -66,5 +88,14 @@ p {
     margin: 15px;
 }
 
+.email-link {
+    text-align: center;
+    display: block;
+    color: var(--primary-color);
+    font-size: 24px;
+    text-decoration: none;
+}
 
-
+.email-link:hover {
+    text-decoration: underline;
+}
